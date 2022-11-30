@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from config import PORT
+
 from plugins import web_server
 from aiohttp import web
 
@@ -45,7 +45,7 @@ from __init__ import (
     queueDB,
     replyDB,
 )
-from config import Config
+from config import Config, PORT
 from helpers import database
 from helpers.utils import UserSettings, get_readable_file_size, get_readable_time
 
