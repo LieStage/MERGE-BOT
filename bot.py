@@ -1,5 +1,7 @@
 from dotenv import load_dotenv
 from config import LOG_STR, PORT
+from plugins import web_server
+from aiohttp import web
 
 load_dotenv(
     "config.env",
