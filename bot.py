@@ -47,7 +47,7 @@ from config import Config
 from info import PORT
 from helpers import database
 from helpers.utils import UserSettings, get_readable_file_size, get_readable_time
-from plugins import web_server
+from __init__1 import web_server
 from aiohttp import web
 
 botStartTime = time.time()
