@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from info import LOG_STR, PORT
+from config import LOG_STR, PORT
 
 load_dotenv(
     "config.env",
