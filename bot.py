@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from config import LOG_STR, PORT
+from config import PORT
 from plugins import web_server
 from aiohttp import web
 
@@ -69,7 +69,7 @@ class MergeBot(Client):
 
         await web.TCPSite(app, bind_address, PORT).start()
         logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
-        logging.info(LOG_STR)
+        
 
     def stop(self):
         super().stop()
