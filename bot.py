@@ -1,7 +1,5 @@
 from dotenv import load_dotenv
 
-from plugins import web_server
-from aiohttp import web
 
 load_dotenv(
     "config.env",
@@ -48,6 +46,8 @@ from __init__ import (
 from config import Config, PORT
 from helpers import database
 from helpers.utils import UserSettings, get_readable_file_size, get_readable_time
+from plugins import web_server
+from aiohttp import web
 
 botStartTime = time.time()
 parent_id = Config.GDRIVE_FOLDER_ID
