@@ -1,4 +1,5 @@
 from dotenv import load_dotenv
+from info import lOG_STR, PORT
 
 load_dotenv(
     "config.env",
@@ -58,6 +59,15 @@ class MergeBot(Client):
         except Exception as err:
             LOGGER.error("Boot alert failed! Please start bot in PM")
         return LOGGER.info("Bot Started!")
+        app = web.AppRunner(await web_server())
+
+        await app.setup()
+
+        bind_address = "0.0.0.0"
+
+        await web.TCPSite(app, bind_address, PORT).start()
+        logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
+        logging.info(LOG_STR)
 
     def stop(self):
         super().stop()
