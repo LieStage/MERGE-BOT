@@ -2,7 +2,7 @@ import os
 
 
 class Config(object):
-    PORT = os.environ.get("PORT","8080")
+    
     API_HASH = os.environ.get("API_HASH")
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
     TELEGRAM_API = os.environ.get("TELEGRAM_API")
