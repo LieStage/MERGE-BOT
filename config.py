@@ -2,6 +2,7 @@ import os
 
 
 class Config(object):
+    PORT = os.environ.get("PORT",8080)
     API_HASH = os.environ.get("API_HASH")
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
     TELEGRAM_API = os.environ["TELEGRAM_API"]
@@ -14,3 +15,4 @@ class Config(object):
     USER_SESSION_STRING = os.environ.get("USER_SESSION_STRING", None)
     IS_PREMIUM = False
     MODES = ["video-video", "video-audio", "video-subtitle","extract-streams"]
+    LOG_STR = "NOTHING TO SA√ "
