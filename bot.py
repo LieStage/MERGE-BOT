@@ -44,7 +44,7 @@ from __init__ import (
     replyDB,
 )
 from config import Config
-from config import PORT
+from Config import PORT
 from helpers import database
 from helpers.utils import UserSettings, get_readable_file_size, get_readable_time
 from plugins import web_server
