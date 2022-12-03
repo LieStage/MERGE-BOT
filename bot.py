@@ -55,8 +55,8 @@ parent_id = Config.GDRIVE_FOLDER_ID
 
 
 class MergeBot(Client):
-    async def start(self):
-        super().start()
+   async def start(self):
+     await super().start()
         try:
             self.send_message(chat_id=int(Config.OWNER), text="<b>Bot Started!</b>")
         except Exception as err:
