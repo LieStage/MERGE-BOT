@@ -55,13 +55,7 @@ parent_id = Config.GDRIVE_FOLDER_ID
 
 
 class MergeBot(Client):
-  async def start(self):
-    await super().start()
-        try:
-            self.send_message(chat_id=int(Config.OWNER), text="<b>Bot Started!</b>")
-        except Exception as err:
-            LOGGER.error("Boot alert failed! Please start bot in PM")
-        return LOGGER.info("Bot Started!")
+  
         app = web.AppRunner(await web_server())
 
         await app.setup()
