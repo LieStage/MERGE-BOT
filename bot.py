@@ -56,7 +56,7 @@ parent_id = Config.GDRIVE_FOLDER_ID
 
 class MergeBot(Client):
 	
-  async def start(self):
+   async def start(self):
         app = web.AppRunner(await web_server())
 
         await app.setup()
